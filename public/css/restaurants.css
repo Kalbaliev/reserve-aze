@@ -1,0 +1,345 @@
+body{
+
+    background: black;
+}
+
+#wrapper{
+    position: relative;
+    display: block;
+    padding-top: 10vw;
+    min-height: 100vw;
+}
+
+/*footer{*/
+    /*display: none;*/
+/*}*/
+/*header{*/
+/*display: none;*/
+/*}*/
+
+
+.restaurants {
+
+
+    /*eger istirikse sagdan soldan bs yer qalsin birincii olcu verilmeli polnosti sora onun icinede olcu verilmeli ve margin sag sol auto etmek lazimdi*/
+    width: 73vw;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.restaurants h1 {
+
+    text-align: center;
+    color:gold;
+    font-size: 3vw;
+}
+.restaurants-headline {
+
+    margin: 0;
+    width: 100%;
+    height: 13vw;
+    background: url("/images/pc/headline.jpg") no-repeat center;
+    background-size: cover; }
+
+/*=------------------*/
+/*-----Restaurant-----*/
+/*-----------------*/
+
+.restaurant {
+
+    margin:1vw 1.45vw;
+    width: 15.6vw;
+    height: 15.6vw;
+    float: left;
+    transition: all .2s ease-in-out;
+}
+.restaurant-image{
+
+    width: 100%;
+    height: 100%;
+
+}
+.restaurant:hover {
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+    box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+    transform: scale(1.1);
+}
+
+
+.ads {
+    margin:1vw 1.45vw;
+    width: 15.6vw;
+    height: 15.6vw;
+    float: left;
+    border:0.1vw solid blue;
+    display: block;
+    overflow: hidden;
+    background: url("/images/restaurants/billionaire/rc.jpg") ;
+    background-size: 100%;
+
+}
+
+
+.btn-my{
+
+    width: 12vw;
+    font-size: 1.2vw;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10%;
+    margin-top: 10vw;
+    border: 0.1vw solid gold;
+    background: transparent;
+    color:white;
+    transition: .2s ease-out;
+    height: 4vw;
+    cursor: pointer;
+}
+.btn-my:hover {
+    /*transform: scale();*/
+background: gold;
+    color: black;
+}
+
+.btn-my span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: white;
+}
+.btn-my span:after {
+    content: '\00bb';
+    color: black;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -1vw;
+    transition: 0.5s;
+}
+.btn-my:hover span {
+    color: black;
+    padding-right: 1.3vw;
+}
+.btn-my:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*=------------------*/
+/*-----vip-boards-----*/
+/*-----------------*/
+
+
+
+.vip-board>.restaurant{
+
+    border: 0.1vw solid orangered;
+}
+.vip-board h2,.simple-board h2 {
+
+    margin-left: 1.5vw;
+    color:orangered;
+}
+
+
+/*=------------------*/
+/*-----simple-boards-----*/
+/*-----------------*/
+
+
+.simple-board>.restaurant{
+
+    border: 0.1vw solid gold;
+}
+
+.simple-board h2 {
+
+    margin-left: 1.5vw;
+    color:gold;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*------------------------Full - Telefon  (Iphone-X de daxil olmaqla)-------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and  (max-width: 767px) {
+    .restaurants-headline {
+
+        margin: 0;
+        margin-top: 7vh;
+        width: 100%;
+        height: 15vh;
+        background: url("/images/mobile/headline.jpg") no-repeat center;
+        background-size: cover; }
+
+    .restaurants h1 {
+
+
+        font-size: 6vh;
+    }
+
+    .restaurant {
+
+
+        width:44vh ;
+        height: 44vh;
+        margin: 2vh 1vh;
+    }
+    .ads {
+
+        width:44vh ;
+        height: 44vh;
+        margin: 2vh 1vh;
+
+    }
+    .btn-my{
+
+        width: 35vh;
+        font-size: 4vh;
+        margin-top: 32vh;
+        height: 8vh;
+
+    }
+    .btn-my:hover{
+        background: gold;
+    }
+    .btn-my span:after {
+        right: -2vh;
+    }
+    .btn-my:hover span
+    {
+        padding-right: 3vh;
+    }
+
+}
+/*Iphone X hemde ona oxsar cihazlar ucun */
+@media only screen and (min-height: 800px) and (max-height:850px){
+
+
+
+    .restaurants-headline {
+
+        margin: 0;
+        margin-top: 7vh;
+        width: 100%;
+        height: 15vh;
+        background: url("/images/mobile/headline.jpg") no-repeat center;
+        background-size: cover; }
+    .restaurants h1 {
+
+
+        font-size: 6vh;
+    }
+    .restaurant {
+
+
+        width:35vh ;
+        height: 35vh;
+
+    }
+    .ads {
+
+        width:35vh ;
+        height: 35vh;
+
+    }
+    .btn-my{
+
+        width: 28vh;
+        font-size: 4vh;
+
+        margin-top: 24vh;
+
+        height: 8vh;
+
+    }
+
+    .btn-my:hover{
+        background: gold;
+    }
+    .btn-my span:after {
+        right: -2vh;
+    }
+    .btn-my:hover span
+    {
+        padding-right: 3vh;
+    }
+
+}
+@media only screen and (min-device-width: 768px) and  (max-device-width: 1025px){
+
+
+    .restaurants-headline {
+
+        margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: url("/images/tablet/headline.jpg") no-repeat center;
+        background-size: cover; }
+    .restaurants h1 {
+
+
+        font-size: 5vh;
+    }
+    /*=------------------*/
+    /*-----Restaurant-----*/
+    /*-----------------*/
+
+    .restaurant {
+
+
+        width:16vh ;
+        height: 16vh;
+        float: left;
+        margin: 2vh 1.2vh ;
+        border:0.5vh solid red;
+    }
+    .ads {
+        margin: 2vh 1.2vh ;
+
+        width:16vh ;
+        height: 16vh;
+
+    }
+
+    .btn-my{
+
+        width: 13vh;
+        font-size: 2vh;
+        margin: 0 10%;
+        margin-top: 11vh;
+        border: 0.1vh solid gold;
+        height: 4vh;
+
+    }
+
+    .btn-my:hover{
+        background: gold;
+    }
+    .btn-my span:after {
+        right: -1.5vh;
+    }
+    .btn-my:hover span
+    {
+        padding-right: 2vh;
+    }
+}
+
+
+
+
+

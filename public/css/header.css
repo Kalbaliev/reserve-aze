@@ -1,0 +1,322 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    /*font-family: 'Jura', sans-serif;*/
+}
+
+
+
+
+header{
+
+    z-index:100;
+    position: fixed;
+    /*background: black;*/
+    height: 5vw;
+    width: 100%;
+
+}
+
+
+
+/*Scrollbar*/
+
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px #555;
+
+    background-color:black;
+}
+
+body::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px black;
+    background-color: gold;
+}
+
+/*------------------------------*/
+/*----------Footer--------------*/
+/*------------------------------*/
+.footer{
+    height: 42.55vw;
+    background: url("/images/pc/footer.jpg");
+    background-size:100% ;
+}
+/*------------------------------*/
+/*-----------SPONSORS-----------------*/
+/*-------------------------------*/
+
+.sponsor-img{
+    filter: grayscale(100%);
+    opacity: 0.7;
+    width:13.020833333333334vw;
+    margin-left:  1.51042vw;
+
+}
+.sponsor-caption{
+
+    text-align: center;font-size: 5vw
+}
+.sponsor-img:hover{
+
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: 1s ease;
+    cursor: pointer;
+
+}
+.arrow-sponsors{
+
+    width: 2vw;
+    height: 3vw;
+}
+
+
+.my-footer{
+
+    background: #2B2B2B;
+    padding: 1vw;
+    clear: both;
+
+}
+.my-footer img {
+
+    margin:0;padding: 0 ;width: 2vw;height: 2vw;
+}
+
+@media only screen and (min-device-width: 1024px) {
+
+
+nav.changeTheme{
+
+    background-color:rgba(0,0,0,0.6);
+    transition: 1s ;
+}
+nav{
+    width:100%;height: 6vw;
+    transition: 1s ease ;
+}
+.navbar {
+    background-color:transparent ;
+    border-color:transparent ;
+
+    padding-right:8vw; font-size:1.5vw;
+    transition:  0.2s ease ;
+}
+.navbar ul {
+    float: right;
+    padding-top:3vw;
+    transition: 0.5s ease ;
+}
+
+ .navbar ul li a {
+
+
+    text-decoration: none; color: white;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+background-color: transparent;
+ }
+nav img {
+    margin-top: 1vw;margin-left: 2vw;
+    float:left;
+    width:15vw ;
+    height: 6vw;
+    transition: 0.5s ease ;
+}
+/*nav.changeTheme .navbar {*/
+/*font-size:1.2vw;*/
+/*transition: 0.2s ease ;*/
+/*}*/
+nav.changeTheme ul {
+    padding-top:2vw;
+    transition: 0.5s ease ;
+}
+nav.changeTheme img {
+    margin-top: 0.5vw;margin-left: 1vw;
+    width: 10vw;
+    height: 4vw;
+    transition: 0.5s ease ;
+}
+
+
+}
+
+/*!*Umumi CSS  Hamburger menu ucun/*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 1023px){
+
+
+    nav.changeTheme{
+
+        background-color:rgba(0,0,0,0.6);
+        transition: 1s ;
+    }
+
+    nav {
+
+        transition: 1s ease ;
+    }
+    /*Nac navigation */
+    nav img {
+
+        margin-top: 1vw;margin-left: 2vw;
+        float:left;
+        width: 25vh;
+        height: 10vh    ;
+        transition: 0.5s ease ;
+    }
+    .navbar {
+        background-color:transparent ;
+        border-color:transparent ;
+
+    }
+
+
+
+    .navbar ul {
+        font-size: 3vh;
+        background-color: black;
+    }
+
+
+
+    /*Sponsors*/
+    .sponsor-img{
+
+        width:14.5vh;
+        margin-left:  1.5vh;
+
+    }
+    .sponsor-caption{
+
+        font-size: 4vh;
+    }
+
+    .arrow-sponsors {
+
+        display: none;
+    }
+
+
+    .footer{
+
+
+        height:59vh;
+        background:  url("/images/mobile/footer.jpg");
+
+    }
+
+
+
+}
+/*logo olcusu balacalasmaya gore */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px){
+
+
+
+    nav.changeTheme img {
+       margin:1vw;
+        width: 12vh;
+        height: 5vh;
+        transition: 0.5s ease ;
+    }
+
+    .my-footer{
+
+        background: #2B2B2B;
+        padding: 2vh;
+        clear: both;
+
+    }
+    .my-footer img {
+
+    width: 6vh;height: 6vh;
+    }
+
+}
+
+/*-----Iphone X ve oxsar telefonlar*/
+@media only screen and (min-height: 800px) and (max-height:850px) {
+
+    .sponsor-img {
+        width: 10vh;
+    }
+    .footer{
+
+
+        height:54vh;
+
+
+    }
+}
+    /*hamburger menu olcusu ile bagli*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px){
+
+
+
+    /*Sponsors*/
+    .sponsor-img{
+
+        width:20vh;
+        margin-left:  1.5vh;
+
+    }
+    .sponsor-caption{
+
+        font-size: 8vh;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+
+
+
+
+
+    .footer{
+
+
+        height:70vh;
+        background:  url("/images/tablet/footer.jpg");
+
+    }
+    .my-footer{
+
+        background: #2B2B2B;
+        padding: 3vh;
+        clear: both;
+        font-size: 2.5vh;
+
+    }
+    .my-footer img {
+
+        width: 8vh;height: 8vh;
+    }
+
+
+    nav img {
+        display: none;
+    }
+    .navbar-toggle {
+
+    margin: 0;
+    margin:3vw;
+    width: 8vw;
+    height: 6vw;
+
+}
+    .navbar-inverse .navbar-toggle .icon-bar {
+        width: 100%;
+        background-color: gold;
+    }
+}
+
+

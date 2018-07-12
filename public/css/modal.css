@@ -1,0 +1,209 @@
+
+.my-Modal{
+
+    position: fixed;
+    left:0;
+    top:0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    overflow: auto;
+
+    padding: 10vw 0;
+    box-sizing: border-box;
+}
+
+.modalContent
+
+{
+    border: 0.1vw solid gold;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    padding: 0vw;
+    width: 50%;
+    animation: modal-down .8s ease;
+
+}
+
+.reserve-Box{
+
+
+    width: 100%;
+    height: 35vw;
+    padding: 3vw;
+    background: rgba(0,0,0,1);
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+ .reserve-Box h2 {
+
+     margin: 0;
+     text-align: center;
+ }
+
+
+
+
+.btn-my{
+
+    width: 80%;
+    font-size: 1.2vw;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    text-align: center;
+    margin: 0 10%;
+
+    border: 0.1vw solid gold;
+    background: transparent;
+    color:white;
+    transition: .2s ease-out;
+    height: 4vw;
+    cursor: pointer;
+}
+.btn-my:hover {
+    /*transform: scale();*/
+    background-color: gold;
+    color: black;
+}
+
+.btn-my span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: white;
+}
+.btn-my span:after {
+    content: '\00bb';
+    color: black;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2vw;
+    transition: 0.5s;
+}
+.btn-my:hover span {
+    color: black;
+    padding-right: 1.3vw;
+}
+.btn-my:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+#close{
+float: right;
+    font-size: 1.5vw;
+    cursor: pointer;
+    margin-right: 1vw;
+    margin-top:1vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes modal-down {
+
+    from{
+
+        top:-30vw;
+        opacity: 0;
+    }
+
+    to{
+        top:calc(50%);
+        opacity: 1;
+    }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+    .modalContent{
+        border:none;
+        width: 80%;
+    }
+    .reserve-Box{
+
+        font-size: 2vh;
+        border: 1px solid gold;
+        min-height: 70vh;
+        height: auto;
+        padding: 3vh;
+
+    }
+    .btn-my{
+
+        font-size: 2vh;
+        height: 4vh;
+
+    }
+    .btn-my span:after {
+
+
+        right: -2vh;
+
+    }
+    .btn-my:hover span {
+
+        padding-right: 1.3vh;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+    .modalContent{
+        border:none;
+        width: 90%;
+
+    }
+    .reserve-Box{
+
+
+        border: 1px solid gold;
+        height: 50vh;
+        padding: 3vh;
+
+    }
+    .btn-my{
+
+        font-size: 2vh;
+        height: 4vh;
+
+    }
+    .btn-my span:after {
+
+
+        right: -2vh;
+
+    }
+    .btn-my:hover span {
+
+        padding-right: 1.3vh;
+    }
+}

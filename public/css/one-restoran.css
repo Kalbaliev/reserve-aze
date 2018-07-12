@@ -1,0 +1,677 @@
+
+#wrapper{
+    position: relative;
+    display: block;
+    padding-top: 10vw;
+    min-height: 150vw;
+}
+body{
+
+    background: black;
+}
+
+/*---------------*/
+/*------Orta---------*/
+/*---------------*/
+.info-restaurant{
+
+    padding: 0;
+    height: 100vw;
+
+}
+
+.cover-restaurant{
+
+    border: 0.1vw solid gold;
+    background-image: url("/images/pc/restaurant-headline.jpg");
+    background-size: 100% 120%;
+    width: 100%;
+    height: 15vw;
+    -webkit-box-shadow: 4px 4px 30px -1px rgba(255,128,0,1);
+    -moz-box-shadow: 4px 4px 30px -1px rgba(255,128,0,1);
+    box-shadow: 4px 4px 30px -1px rgba(255,128,0,1);
+    margin-bottom: 2vw;
+}
+.content-restaurant{
+
+    width: 100%;
+
+    height: 45vw;
+}
+.profile-restaurant{
+
+    float: left;
+    margin-left: 3.5vw;
+
+
+}
+.profile-photo{
+
+    border: 1px solid gold;
+    background-image: url("/images/restaurants/billionaire/profile.jpg");
+    background-size: 100% ;
+    width: 17vw;
+    height: 17vw;
+    margin-bottom: 1.5vw;
+
+}
+.profile-contact{
+    width: 17vw;
+    text-align: center;
+    color: #fff;
+}
+
+.profile-contact button {
+
+    width: 3.5vw; height: 2.5vw; margin: 0
+}
+.about-restaurant{
+    float: left;
+    width: 42.5vw;
+    margin-top: 1vw;
+    margin-left: 1.5vw;
+}
+.about-restaurant h2 {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.reserve-button {
+    border: 1px solid gold;
+    float: right;
+    margin-top: 3.3vw;
+    background: black;
+    margin-right: 0.5vw ;
+    color: white;
+    text-align: center;
+    font-size: 1.4vw;
+    padding: 1vw;
+    width: 11vw;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+.reserve-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.reserve-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.reserve-button:hover span {
+    padding-right: 1.3vw;
+}
+.reserve-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+.album-restaurant{
+    float: left;
+    height: 30vw;
+    margin-top: 2vw;
+    width: 42.5vw;
+    margin-left: 1.5vw;
+
+}
+.photos-of-restaurant{
+
+    overflow: hidden;
+    float: left;
+    margin-left: 0.5vw;
+    margin-bottom: 1vw;
+    width: 10vw;
+    height:10vw;
+    border: 1px solid gold;
+    transition: all .2s ease-in-out;
+
+}
+.photos-of-restaurant:hover{
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+    box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+    transform: scale(1.1);
+}
+.photos-of-restaurant img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.menu-of-restaurant{
+
+    height: 40vw;
+    /*background-image: url("/frontend/images/restaurants/billionaire/menu.jpg");*/
+    background: #5D5D5D;
+    margin-bottom: 5vw;
+}
+.info-restaurant    h1 {
+
+    color: #fff;
+    text-align: center;
+    padding-top: 2vw;
+}
+
+.names-of-menu{
+    overflow: hidden;
+    float: left;
+    width: 30%;
+    height: 100%;
+    border:0.1vw solid gold;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.names-of-menu .button {
+    background-color: transparent; /* Green */
+    border: 0.1vw solid gold;
+    border-left: none;
+    border-right:none;
+    color: white;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    cursor: pointer;
+    width: 100%;
+
+
+}
+.names-of-menu .button {
+    border-bottom: none; /* Prevent double borders */
+}
+.names-of-menu .button:first-child{
+    border-top: none; /* Prevent double borders */
+}
+.names-of-menu .button:hover {
+    background-color: gold;
+    color:black;
+}
+.names-of-menu .button.clicked{
+    background-color: gold;
+    color:black;
+}
+
+
+.about-menu{
+    float: left;
+    width: 70%;
+    height: 100%;
+
+}
+.photo-of-menu{
+    height: 35%;
+    width: 100%;
+    overflow: hidden;
+    border:0.1vw solid gold;
+    border-left:none;
+
+}
+.photo-of-menu img {
+    height: 100%;
+    width: 100%;
+
+}
+.content-of-menu{
+    padding-top: 5vw;
+    height: 65%;
+    width: 100%;
+    border:0.1vw solid gold;
+    border-top:none;
+    border-left:none;
+    background-image: url("/images/restaurants/billionaire/menu2.jpg");
+    background-size: 100% 100%;
+
+}
+
+
+.content-food{
+
+    float: left;
+    height: 2vw;
+    width: 15vw;
+    border-right: 1px solid gold;
+    color:white;
+    font-size: 0.8vw;
+}
+.content-food .food-name{
+    padding-left: 1vw   ;
+    float: left;
+}
+.content-food .food-price{
+    padding-right: 1vw;
+    float: right;
+}
+
+
+.ajax-preloader{
+
+    display:block;
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: 20.5vw;
+}
+.hidden-preloader{
+
+    display: none;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and  (max-width: 767px) {
+    #wrapper{
+
+        padding-top:15vh;
+        min-height: 170vh;
+    }
+
+    .cover-restaurant{
+
+        border: 0.1vw solid gold;
+        background-image: url("/images/mobile/restaurant-headline.jpg");
+        height: 15vh;
+        margin-bottom: 4vh;
+    }
+    .content-restaurant{
+
+
+        height: 60vh;
+    }
+
+    .profile-photo{
+
+        border: 1px solid gold;
+        background-image: url("/images/restaurants/billionaire/profile.jpg");
+        background-size: 100% ;
+        width: 17vh;
+        height: 17vh;
+        margin-bottom: 1.5vh;
+
+    }
+    .profile-contact{
+        width: 17vh;
+
+    }
+    .profile-contact h2 {
+
+        font-size: 2.2vh;
+    }
+    .profile-contact h4 {
+        font-size: 1.5vh;
+    }
+    .profile-contact button {
+
+        width: 4vh; height: 4vh; margin: 0
+    ;
+        font-size: 1.5vh;
+    }
+    .about-restaurant{
+
+        width: 30vh;
+        margin-left: 1.5vh;
+    }
+    .about-restaurant h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2vh;
+    }
+
+    .reserve-button {
+        border: 0.1vh solid gold;
+        margin-top: 2vh;
+        margin-right: 0.5vh ;
+        font-size: 1.5vh;
+        padding: 1vh;
+        width: 11vh;
+
+
+    }
+    .reserve-button span:after {
+
+        right: -1vh;
+
+    }
+    .reserve-button:hover span {
+        padding-right: 1.3vh;
+    }
+
+    .album-restaurant{
+
+        height: 15vh;
+        margin-top: 2vh;
+        width: 30vh;
+        margin-left: 1.5vh;
+        padding-left: 2vh;
+
+    }
+    .photos-of-restaurant{
+
+
+        margin-left: 0.5vh;
+        margin-bottom: 1vh;
+        width: 8vh;
+        height:8vh;
+
+
+    }
+    .photos-of-restaurant:hover{
+        -webkit-box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+        -moz-box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+        box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+        transform: scale(1.1);
+    }
+    .photos-of-restaurant img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .menu-of-restaurant{
+
+        height: 60vh;
+        margin-bottom: 5vh;
+    }
+
+    .names-of-menu{
+
+        width: 40%;
+
+
+    }
+    .names-of-menu .button {
+
+        font-size: 1.5vh;
+
+    }
+
+    .about-menu{
+
+        width: 60%;
+
+
+    }
+
+
+    .content-food{
+        height: 3vh;
+        width: 30vh;
+        font-size: 1.5vh;
+    }
+
+
+
+}
+/*Iphone X hemde ona oxsar cihazlar ucun */
+@media only screen and (min-height: 800px) and (max-height:850px){
+    #wrapper{
+
+        padding-top:15vh;
+        min-height: 170vh;
+    }
+
+
+    .content-restaurant{
+
+
+        height: 60vh;
+    }
+
+    .profile-photo{
+
+
+        width: 13vh;
+        height: 13vh;
+        margin-bottom: 1vh;
+
+    }
+    .profile-contact{
+        width: 13vh;
+
+    }
+    .profile-contact h2 {
+
+        font-size: 1.5vh;
+    }
+    .profile-contact h4 {
+        font-size: 1.2vh;
+    }
+    .profile-contact button {
+
+        width: 4vh; height: 4vh; margin: 0
+    ;
+        font-size: 1.5vh;
+    }
+    .about-restaurant{
+
+
+        width: 25vh;
+        margin-left: 1.5vh;
+    }
+    .about-restaurant h2 {
+
+        font-size:2vh;
+    }
+
+
+
+
+    .album-restaurant{
+
+
+        height: 20vh;
+        margin-top: 2vh;
+        width: 40vh;
+        margin-left: 1vh;
+        padding-left: 2vh;
+
+    }
+    .photos-of-restaurant{
+
+
+        margin-left: 1vh;
+        margin-bottom: 2vh;
+
+
+
+    }
+
+
+
+    .menu-of-restaurant{
+
+        height: 60vh;
+        margin-bottom: 5vh;
+    }
+
+    .names-of-menu{
+
+        width: 40%;
+
+
+    }
+    .names-of-menu .button {
+
+        font-size: 1.5vh;
+
+    }
+
+    .about-menu{
+
+        width: 60%;
+
+
+    }
+
+
+    .content-food{
+        height: 3vh;
+        width: 25vh;
+        font-size: 1.4vh;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 768px) and  (max-width: 1023px) {
+
+
+    #wrapper{
+
+        min-height: 190vh;
+    }
+
+    .cover-restaurant{
+
+        border: 0.1vw solid gold;
+        background-image: url("/images/tablet/restaurant-headline.jpg");
+        height: 18vh;
+        margin-bottom: 4vh;
+    }
+    .content-restaurant{
+
+
+        height: 70vh;
+    }
+
+    .profile-photo{
+
+        border: 1px solid gold;
+        background-image: url("/images/restaurants/billionaire/profile.jpg");
+        background-size: 100% ;
+        width: 25vh;
+        height: 25vh;
+        margin-bottom: 1.5vh;
+
+    }
+    .profile-contact{
+        width: 25vh;
+
+    }
+    .profile-contact h2 {
+
+        font-size: 3vh;
+    }
+    .profile-contact h4 {
+        font-size: 2vh;
+    }
+    .profile-contact button {
+
+        width: 5.5vh; height: 4.5vh; margin: 0
+    ;
+        font-size: 2vh;
+    }
+    .about-restaurant{
+
+        width: 40vh;
+        margin-left: 2.5vh;
+    }
+    .about-restaurant h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2.5vh;
+    }
+
+    .reserve-button {
+        border: 1px solid gold;
+        margin-top: 2.5vh;
+        margin-right: 1vh ;
+        font-size: 2vh;
+        padding: 1.5vh;
+        width: 14vh;
+
+
+    }
+    .reserve-button span:after {
+
+        right: -1vh;
+
+    }
+    .reserve-button:hover span {
+        padding-right: 1.3vh;
+    }
+
+    .album-restaurant{
+
+        height: 22vh;
+        margin-top: 3vh;
+        width: 40vh;
+        margin-left: 2vh;
+        padding-left: 2.5vh;
+
+    }
+    .photos-of-restaurant{
+
+
+        margin-left: 1vh;
+        margin-bottom: 1.5vh;
+        width: 11vh;
+        height:11vh;
+
+
+    }
+    .photos-of-restaurant:hover{
+        -webkit-box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+        -moz-box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+        box-shadow: 5px 5px 10px 0px rgba(148,143,148,0.66);
+        transform: scale(1.1);
+    }
+    .photos-of-restaurant img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .menu-of-restaurant{
+
+        height: 70vh;
+        margin-bottom: 5vh;
+    }
+
+    .names-of-menu{
+
+        width: 40%;
+
+
+    }
+    .names-of-menu .button {
+
+        font-size: 2vh;
+
+    }
+
+    .about-menu{
+
+        width: 60%;
+
+
+    }
+
+
+    .content-food{
+        height: 5vh;
+        width: 40vh;
+        font-size: 2vh;
+    }
+
+
+}

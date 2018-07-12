@@ -1,0 +1,14 @@
+@font-face{
+
+    font-family: 'Reserve Azerbaijan';
+    src:url('/css/fonts/breakfill.otf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+*{
+
+    font-family: Reserve Azerbaijan;
+    /*color:black;*/
+}
+

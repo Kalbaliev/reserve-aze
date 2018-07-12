@@ -1,0 +1,17 @@
+
+
+
+
+.owl-next {
+
+  position: absolute;
+  top:95px;
+  right:-70px;
+}
+.owl-prev {
+
+  position: absolute;
+  top:95px;
+  left:-70px;
+}
+

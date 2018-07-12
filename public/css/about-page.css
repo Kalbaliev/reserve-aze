@@ -1,0 +1,565 @@
+
+.section{
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    /*background: black;*/
+    /*background: gold;*/
+}
+
+
+.about-page-cover{
+
+    height: 100%;
+    background: url(/images/pc/about-cover.jpg) center center no-repeat;
+    background-size: 100% 100%  ;
+
+}
+
+.about-content{
+    padding: 3vw;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.btn-more
+{
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    width: 20vw;
+    height: 3vw;
+    color: white;
+    border:0.1vw solid gold;
+
+    transition: .2s ease-out;
+    font-size: 1.5vw;
+    cursor: pointer;
+
+}
+.btn-more:focus
+{
+
+    outline: none;
+}
+.btn-more:hover
+{
+    color: black;
+    /*transform: scale(1.05);*/
+    background: gold;
+
+}
+
+
+.about-content h1 {
+
+    font-size: 5vw;
+    font-family: "Reserve Azerbaijan";
+    text-align: center;
+    color:white;
+    margin: 0;
+}
+.about-content p {
+
+
+    font-size: 1.2vw;
+    font-family: "Reserve Azerbaijan";
+    text-align: center;
+    color:white;
+    margin-bottom: 2vw;
+}
+
+
+
+
+
+/*Section 2*/
+
+
+.about-we-content{
+    min-height: 60vh;
+    height: auto;
+    width: 100%;
+    margin-top: 6vw;
+
+}
+.about-we-content h1{
+    text-align: center;
+    font-size: 4vw;
+}
+.about-common-content{
+    width: 60%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    /*background: blue;*/
+
+}
+
+.about-content-common-image {
+
+    overflow: hidden;
+    width: 100%;
+    height: 24vw;
+    -webkit-box-shadow: 6px 6px 15px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 15px 1px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 15px 1px rgba(0,0,0,0.75);
+
+}
+
+
+.about-person-content
+{
+
+    display: block;
+    margin: 0;
+    float: left;
+    width: 40%;
+    height: 100%;
+    padding-left: 2vw;
+
+}
+.about-person-content h1 {
+
+    display: none;
+}
+.about-person{
+    display: block;
+    position: relative;
+
+
+    width: 100%;
+    min-height: 10vw;
+    height: auto;
+    margin-bottom: 1vw;
+    padding-left: 2vw;
+}
+
+.about-person-image{
+
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 25%;
+    height: 7vw;
+    border: 0.1vw solid gold;
+    border-radius: 100%;
+    margin: 0;
+    -webkit-box-shadow: 6px 6px 15px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 15px 1px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 15px 1px rgba(0,0,0,0.75);
+
+}
+
+
+.about-person-image img {
+    display: block;
+    width: 7vw;
+    height: 7vw;
+
+}
+.about-person-text{
+
+    float: left;
+    display: block;
+
+    width: 70%;
+    min-height: 7vw;
+
+    margin-left: 1vw;
+
+
+}
+
+.about-person-text p {
+
+    font-size: 1vw;
+}
+
+.clear{
+
+    clear: both;
+}
+
+.about-page-box-social{
+    float: left;
+    width: 25%;
+    height: 3vw;
+
+    margin-top: 1vw;
+}
+.about-person-social{
+
+    float: left;
+
+    margin-left: 1vw;
+    margin-top: 1vw;
+    display: block;
+    width: 70%;
+    height: 3vw;
+
+}
+
+.about-video{
+
+    margin-top: 5vw;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5vw;
+}
+.about-video iframe {
+    display: block;
+    margin: 0 auto;
+    width: 52vw;
+    height: 31.25vw;
+    -webkit-box-shadow: 6px 6px 15px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 15px 1px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 15px 1px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+/*------------------------------*/
+/*------Social media -----------*/
+/*----------------------------*/
+
+.fa {
+    float: left;
+    text-align: center;
+    font-size: 1.2vw;
+    width: 2.2vw;
+    height: 2.2vw;
+    text-decoration: none;
+    padding: 0.5vw;
+    transition: all .3s ease;
+    background: gold;
+    color:black ;
+    border:0.1vw solid black;
+    margin-right: 0.5vw;
+    -webkit-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+}
+
+
+.fa:hover {
+
+
+    text-decoration: none;
+    text-decoration-color: white;
+    background: transparent;
+    color:black ;
+    border:0.1vw solid black;
+}
+
+
+
+
+.about-why {
+margin-top: 2vw;
+
+    text-shadow: 2px 4px 3px rgba(255, 215, 0,.7);
+}
+
+.about-why ul {
+    position: relative;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 2em;
+
+}
+.about-why ul li:before {
+    padding-top: 0.5em;
+    content: "✔";
+    position: absolute;
+    left: 0;
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*------------------------Full - Telefon  (Iphone-X de daxil olmaqla)-------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and  (max-width: 769px) {
+
+
+
+    .about-page-cover{
+
+        height: 100%;
+        background: url(/images/mobile/about-cover.jpg) center center no-repeat;
+
+    }
+
+    .about-content{
+
+
+        width: 90%;
+        height: auto;
+        padding-bottom:5%;
+    }
+
+    .btn-more
+    {
+        width: 80%;
+        height: 100%;
+        border:0.1vh solid gold;
+        font-size: 8vw;
+
+    }
+
+
+    .about-content h1 {
+        padding-top: 5%;
+        font-size: 9vw;
+
+
+    }
+    .about-content p {
+
+
+        font-size: 4vw;
+        margin: 4vw auto;
+    }
+
+
+
+
+
+    /*Section 2*/
+
+
+    .about-we-content{
+        min-height: 100vh;
+        height: auto;
+        width: 100%;
+        margin-top: 3vh;
+
+    }
+    .about-we-content h1{
+
+        padding-top: 10vw;
+        font-size: 5vh;
+    }
+    .about-common-content{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .about-content-common-image {
+
+        width: 100%;
+        height: 25vh;
+
+    }
+    .about-content-common-image img {
+
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .about-person-content h1 {
+
+        display: block;
+    }
+
+    .about-person-content
+    {
+        margin-top: 2vh;
+        width: 100%;
+        height: 100%;
+
+
+    }
+    .about-person{
+
+        height: 40vw;
+        margin-bottom: 1vw  ;
+
+    }
+
+    .about-person-image{
+        /**/
+
+        float: left;
+        width: 18vw;
+        height: 18vw;
+        border: 0.2vh solid gold;
+
+        -webkit-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+        box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+        margin-right: 1vh;
+    }
+
+
+    .about-person-image img {
+        display: block;
+        width: 100%;
+        height: 100%
+
+    }
+    .about-person-text{
+
+        display: block;
+        position: relative;
+        width: 70%;
+        height: 27vw;
+        margin-left: 1.5vh;
+
+    }
+    .about-person-text h3 {
+
+        margin: 1vw;
+        font-size: 6vw;
+
+    }
+    .about-person-text p {
+
+        font-size: 4vw;
+    }
+
+
+
+    .about-page-box-social{
+
+
+        width: 25%;
+        height:10vw;
+        margin-top: 1vw;
+    }
+    .about-person-social{
+
+
+        margin-left: 1vw;
+        margin-top: 1vw;
+        width: 68%;
+        height:10vw;
+        padding-left: 3vw;
+
+
+    }
+
+    .about-video{
+
+
+        margin-top: 15vw;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15vw;
+    }
+    .about-video iframe {
+
+        margin: 0 auto;
+        width: 80vw;
+        height: 25vh;
+
+    }
+
+    hr {
+
+        margin: 4vw auto;
+    }
+
+
+
+    /*------------------------------*/
+    /*------Social media -----------*/
+    /*----------------------------*/
+
+    .fa {
+
+        font-size: 7vw;
+        width: 10vw;
+        height: 10vw;
+        padding: 2vw;
+        border:0.2vw solid black;
+        margin-right: 2vw;
+
+    }
+
+
+    .fa:hover {
+
+
+
+        border:0.1vh solid black;
+    }
+}
+@media only screen and (min-device-width: 768px) and  (max-device-width: 1025px){
+
+
+
+
+
+    .about-page-cover{
+
+        height: 100%;
+        background:url(/images/tablet/about-cover.jpg) center center no-repeat;
+
+    }
+
+
+
+
+    /*Section 2*/
+
+
+    .about-we-content h1{
+
+        font-size: 8vh;
+    }
+
+
+    .about-content-common-image {
+
+        width: 100%;
+        height: 35vh;
+
+    }
+
+
+
+    .about-video iframe {
+
+        margin: 0 auto;
+        width: 80vw;
+        height: 35vh;
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

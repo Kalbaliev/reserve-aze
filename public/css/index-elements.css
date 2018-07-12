@@ -1,0 +1,254 @@
+/*---------------------------------*/
+/*------SLIDER REVOLUTION ---------*/
+/*----------------------------------*/
+#sliderRevo{
+
+    /*burdaki rengde birinci text olur sonra texte deyisir rengi ag-a*/
+    overflow: hidden;
+    background-color:#555555 ;
+}
+.sliderPages{
+
+
+    float:left; clear:both; margin:0px; padding: 0px; width: 100%; height: 1019px;
+}
+
+
+/*----------------------------------*/
+/*Index SERVICE ELEMENTS
+LOCATION MENU RESERV
+*/
+/*----------------------------------*/
+
+
+@media only screen and (min-device-width: 1024px) {
+    .ourservices{
+
+        padding:13vw 15vw;
+    }
+    .service-link{
+
+        width: 15vw;
+        border: 0.1vw solid gold;
+
+        margin-left: 2vw;
+        /*border-top-left-radius: 15px;*/
+        /*border-top-right-radius: 15px;*/
+        overflow: hidden;
+        padding: 0;
+
+        height: 20vw;
+    }
+    .service-link:first-child{
+        margin-left:  8.6vw;
+
+    }
+}
+
+
+
+.service-link{
+
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+
+
+.photo-part{
+
+    margin: 0;
+    padding: 0;
+    height: 40%;
+    background-color: black;
+    padding: 1vw 0;
+}
+.photo-part img {
+
+    height: 6vw;
+    width: 6vw;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    position: relative;
+
+
+}
+/*.photo-part img:last-of-type{*/
+    /*margin-top: 0.4vw;*/
+    /*margin-left: 1vw;*/
+    /*height: 170px;*/
+    /*width: 170px;*/
+/*}*/
+.content-part{
+    border-bottom: 0.25vw solid gold;
+    padding: 2vw 2vw;
+    background: url("/images/post-bg.jpg") top left;
+    background-size: 40vh 40vh;
+    height: 60%;
+}
+.content-part h2 {
+
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 759px){
+    .service-link{
+        padding: 0;
+        height: 90vh;
+        margin-top: 5vh;
+
+    }
+    .service-link:last-child{
+        margin-bottom: 5vh;
+
+    }
+    .photo-part {
+
+        padding: 3vh 10vh;
+
+
+    }
+
+    .content-part{
+        border-bottom: 0.8vh solid gold;
+        padding: 5vh 4vh;
+
+        background-size: 55vh 55vh;
+    }
+    .content-part h2 {
+
+
+        font-size: 4.5vh;
+    }
+
+}
+
+
+/*----------------------------------*/
+/* -----DOWN ARROW-------*/
+/*----------------------------------*/
+
+.down-arrow {
+
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+
+}
+
+@media only screen and (min-device-width: 1024px) {
+    .down-arrow {
+
+        cursor: pointer;
+        position: absolute;
+        z-index: 1000;
+        top: 48vw;
+        left: 48.8vw;
+    }
+}
+
+/*----------------------------------*/
+/*TP-BULLETS kecidler */
+/*----------------------------------*/
+.tp-bullets{
+
+     display: none;
+    transition: 0.5s ease ;
+
+}
+
+
+/*--------------------------*/
+/*-----section Vectorsss------*/
+.services{
+    width:100%;height:100%;
+    overflow: hidden;
+    background-image: url('/images/pc/bg.jpg');
+
+    background-size: 100%;
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 759px) {
+
+    .service-link {
+
+        margin: 5vh auto;
+        height: 60vh;
+        width: 40vh;
+    }
+
+    .photo-part img {
+
+        width: 20vh;
+        height: 20vh;
+    }
+    .services{
+        width:100%;height:100%;
+        overflow: hidden;
+        background-image: url('/images/mobile/bg.jpg')
+
+    }
+
+    .down-arrow{
+        margin-left:45%;
+        padding: 0;
+        bottom: 10vh;
+    }
+
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .services{
+        width:100%;height:100%;
+        overflow: hidden;
+        background-image: url('/images/tablet/bg.jpg')
+
+    }
+
+    .service-link {
+
+        margin: 5vh auto;
+        height: 50vh;
+        width: 40vh;
+
+    }
+    .content-part h2 {
+
+        margin-top: 8vh;
+
+        font-size: 4.5vh;
+    }
+    .photo-part img {
+
+        width: 20vh;
+        height: 20vh;
+    }
+    .services{
+        width:100%;height:100%;
+        overflow: hidden;
+        background-image: url('/images/mobile/bg.jpg')
+
+    }
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .down-arrow{
+        margin-left:47%;
+        padding: 0;
+        bottom: 10vh;
+    }
+}
+
+
+
+
+
